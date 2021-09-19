@@ -7,6 +7,20 @@ fullStackPHPClassName("03.04 - Manipulação de objetos");
  */
 fullStackPHPClassSession("manipulação", __LINE__);
 
+$arrProfile = [
+    'name' => 'Felipe',
+    'company' => 'localhost',
+    'email' => 'felipe.oliveira@wapstore.com.br'
+];
+
+$objProf = (object) $arrProfile;
+
+unset( $objProf->company );
+
+var_dump($arrProfile, $objProf);
+
+$company = new stdClass();
+
 
 /**
  * [ análise ] class | objetcs | instances

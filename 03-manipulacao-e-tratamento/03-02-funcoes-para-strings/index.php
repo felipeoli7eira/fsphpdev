@@ -24,3 +24,9 @@ fullStackPHPClassSession("substituição", __LINE__);
  * [ parse string ] parse_str | mb_parse_str
  */
 fullStackPHPClassSession("parse string", __LINE__);
+
+$queryParamsExample = "name=Felipe&age=23&course=fsphpdev";
+
+$queryParamsToPHPArray = mb_parse_str($queryParamsExample, $result);
+
+var_dump( $result );
